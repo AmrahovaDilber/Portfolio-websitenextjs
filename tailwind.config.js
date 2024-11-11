@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,10 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeInUp: {
+          '0%': { opacity: 0, transform: 'scale(0.5)' },
+          '100%': { opacity: 1, transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        fadeInUp: 'fadeInUp 1s ease-out',
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'custom-gradient': 'linear-gradient(103.4deg, #04071D 16.66%, #0C0E23 81.61%)',
       },
     },
   },
