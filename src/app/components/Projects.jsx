@@ -35,7 +35,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div id="projects" className="relative z-10">
+    <div id="projects" className="relative z-10 px-4 sm:px-0">
       <Title name="A small selection of recent projects" />
       <div className="flex flex-wrap items-center justify-center p-2 gap-x-12 gap-y-6 mt-8">
         {projects.map((project) => (

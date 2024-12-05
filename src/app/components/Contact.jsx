@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="mx-auto max-w-7xl min-h-screen  flex flex-col lg:flex-row space-x-[150px] py-[150px]  "
+      className="mx-auto max-w-7xl min-h-screen  flex flex-col lg:flex-row sm:space-x-[150px] py-[150px]  "
     >
       <Form></Form>
       <Connection></Connection>
