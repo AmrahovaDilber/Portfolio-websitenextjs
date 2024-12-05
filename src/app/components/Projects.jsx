@@ -20,16 +20,9 @@ const projects = [
     icons: ["/react.webp", "/css.png"],
     des: "Discover daily inspirational quotes, organize your month with our interactive planner, and explore essential information, community events, and more.",
   },
+
   {
     id: 3,
-    title: "ShopCart",
-    link: "https://shopcart-ecommercewebsite.netlify.app/",
-    image: "/ecommerce.png",
-    icons: ["/react.webp", "/css.png"],
-    des: "Explore our ecommerce website for a wide range of high-quality products at competitive prices. Enjoy a seamless shopping experience with fast shipping.",
-  },
-  {
-    id: 4,
     title: "Dilber's Portfolio",
     link: "https://diberamrahova-portfolio.netlify.app/",
     image: "/portfolio.png",
@@ -42,7 +35,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className="relative z-10">
       <Title name="A small selection of recent projects" />
       <div className="flex flex-wrap items-center justify-center p-2 gap-x-12 gap-y-6 mt-8">
         {projects.map((project) => (
